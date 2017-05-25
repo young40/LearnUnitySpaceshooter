@@ -16,16 +16,22 @@ public class MyShip : MonoBehaviour {
 
 	public GameObject preBullet;
 
+	public float fireRate;
+
+	private float nextFile;
+
 	// Use this for initialization
 	void Start () {
-		GameObject xxx = Instantiate (preBullet, transform.position, transform.rotation);
-
-		xxx.transform.position = new Vector3 (0, 0, 3);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetButton ("Fire1") && Time.time > nextFile) {
+			nextFile = Time.time + fireRate;
+
+			Instantiate (preBullet, transform.position, transform.rotation);
+		}
 	}
 
 	void FixedUpdate()
