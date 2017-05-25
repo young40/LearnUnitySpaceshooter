@@ -195,6 +195,7 @@ MonoBehaviour:
     yMin: -5
     yMax: 5
   skew: 3
+  preBullet: {fileID: 1726464854503084, guid: 3a5d62c2bc93948f7b57547b001bd37a, type: 2}
 --- !u!1 &275897611
 GameObject:
   m_ObjectHideFlags: 0

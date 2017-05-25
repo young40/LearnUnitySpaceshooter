@@ -14,9 +14,13 @@ public class MyShip : MonoBehaviour {
 	public Boundary Bound;
 	public float skew;
 
+	public GameObject preBullet;
+
 	// Use this for initialization
 	void Start () {
-		
+		GameObject xxx = Instantiate (preBullet, transform.position, transform.rotation);
+
+		xxx.transform.position = new Vector3 (0, 0, 3);
 	}
 	
 	// Update is called once per frame
