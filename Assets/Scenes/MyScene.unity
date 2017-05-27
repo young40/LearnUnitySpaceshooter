@@ -405,7 +405,7 @@ MonoBehaviour:
   startTime: 3
   waveBreakTime: 2
   enemyNumber: 3
-  enemyStart: {x: 4, y: 0, z: 3}
+  enemyStart: {x: 5, y: 0, z: 9}
 --- !u!1 &909049798
 GameObject:
   m_ObjectHideFlags: 0
