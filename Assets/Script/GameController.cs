@@ -33,33 +33,4 @@ public class GameController : MonoBehaviour {
 			}
 		}
 	}
-	/*
-	IEnumerator spawnWaves2222()
-	{
-
-		yield return new WaitForSeconds(startTime);
-		while (true)
-		{
-
-			for (int i = 0; i < num; i++)
-			{
-				Vector3 position = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-				Instantiate(asteroid, position, Quaternion.identity);
-
-				yield return new WaitForSeconds(asteroidRate);
-			}
-
-			yield return new WaitForSeconds(waveInterval);
-
-			if (gameOverFlag)
-			{
-				restartFlag = true;
-				gameoverText.text = "Game Over!";
-				restartText.text = "Press 'R' to restart!";
-				break;
-			}
-
-		}
-
-	}*/
 }
